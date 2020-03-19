@@ -91,18 +91,22 @@ Ans: In AVL tree, after performing every operation like insertion and deletion w
 
 - Single Left Rotation (LL Rotation)
 In LL Rotation every node moves one position to left from the current position.Example:3is right child of 2, 2 is right child of 1. 2 becomes the new root, 1 takes ownership of any 2's left child, and 3 takes ownership of any 2's right child.
+
 ![Left Rotation](https://qph.fs.quoracdn.net/main-qimg-4909912ad7731393577f2482594a0753.webp)
 
 - Single Right Rotation (RR Rotation)
 In RR Rotation every node moves one position to right from the current position.Example:3 is left child of 4, 4 is left child of 5. 4 becomes the new root, 3 takes ownership of any 4's left child, and 5 takes ownership of any 5's right child.
+
 ![Right Rotation](https://qph.fs.quoracdn.net/main-qimg-96adcd2021787abfc018e0335ba877ea.webp)
 
 - Left Right Rotation (LR Rotation)
-The LR Rotation is combination of single left rotation followed by single right rotation. In LR Rotation, first every node moves one position to left then one position to right from the current position. Performing a Right-rotation on the right Subtree, prepares for the definitive Left-rotation. 6 becomes the root of the Subtree having 8 as right child; finally, 6 becomes the root of the Tree, having 5 as left child and 8 as right child. 
+The LR Rotation is combination of single left rotation followed by single right rotation. In LR Rotation, first every node moves one position to left then one position to right from the current position. Performing a Right-rotation on the right Subtree, prepares for the definitive Left-rotation. 6 becomes the root of the Subtree having 8 as right child; finally, 6 becomes the root of the Tree, having 5 as left child and 8 as right child.
+
 ![Left Right Rotation](https://qph.fs.quoracdn.net/main-qimg-99e0cda76398e114ac33346ea431a376.webp)
 
 - Right Left Rotation (RL Rotation)
 The RL Rotation is combination of single right rotation followed by single left rotation. In RL Rotation, first every node moves one position to right then one position to left from the current position.Example: 7becomes the root of the Subtree having 6 as left child; finally 7 becomes the root of the Tree, having 6 as left child and 8 as right child.
+
 ![Right Left Rotation](https://qph.fs.quoracdn.net/main-qimg-c036fbcb64ccd101f42f2abee488ad9d.webp)
 
 ## 3. b) Construct a BST from the following data and show VLR, LRV,LVR and RVL traversals 14,10,17,12,11,20,18,25,20,8,23,23
@@ -199,10 +203,13 @@ There are mainly two methods to resolving collision:
 Separate chaining is defined as a method by which linked lists of values are built in association with each location within the hash table when a collision occurs.
 The concept of separate chaining involves a technique in which each index key is built with a linked list. This means that the table's cells have linked lists governed by the same hash function.
 Example:
+
 ![Seperate Chaining Collision](https://study.com/cimages/multimages/16/sep_chain_1.png)
+
 The figure shows incidences of collisions in different table locations. We'll assign strings as our input data: [John, Janet, Mary, Martha, Claire, Jacob, and Philip]. Our hash table size is 6. As the strings are evaluated at input through the hash functions, they are assigned index keys (0, 1, 2, 3, 4, or 5). We store the first string John, then Janet and Mary. All is fine, but when we try to store Martha, the hash function assigns Martha the same index key as Janet. Now, because a second value is attempting to map to an already occupied index key, a collision occurs as seen in figure we've been using. Three out of the six locations are occupied, and the probability that the remaining strings yet to be loaded will cause other collisions is very high.
 
 So, in place of the collision error which occurred in the figure we used in the last section, the cell now contains a linked list containing the string 'Janet' and 'Martha' as seen in this new figure. We can see in this figure how the subsequent strings are loaded using the separate chaining technique.
+
 ![Seperate Chaining](https://study.com/cimages/multimages/16/sep_chain2.png)
 
 ## 6. a) Define Graph and digraphs. Explain Adjacency matrix representation of graph with examples in unidirected and directed graph.
@@ -228,11 +235,12 @@ Algorithm Steps:
 - Only add edges which doesn't form a cycle , edges which connect only disconnected components.
 
 Consider following example:
+
 ![Kruskals algorithm](https://he-s3.s3.amazonaws.com/media/uploads/6322896.jpg)
 
 ## 7. Short notes on:
 
-1. TOH problem
+### 1. TOH problem
 
 Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. The objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules:
 
@@ -242,7 +250,7 @@ Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. Th
   
 For n disks, total 2n – 1 moves are required.
 
-2. Deterministic and non-deterministic algorithm
+### 2. Deterministic and non-deterministic algorithm
 
 In deterministic algorithm, for a given particular input, the computer will always produce the same output going through the same states but in case of non-deterministic algorithm, for the same input, the compiler may produce different output in different runs. In fact non-deterministic algorithms can’t solve the problem in polynomial time and can’t determine what is the next step. The non-deterministic algorithms can show different behaviors for the same input on different execution and there is a degree of randomness to it.
 
@@ -252,7 +260,7 @@ For a particular input the computer will give always same output. | For a partic
 Can solve the problem in polynomial time. | Can’t solve the problem in polynomial time.
 Can determine the next step of execution. | Cannot determine the next step of execution due to more than one path the algorithm can take.
 
-3. Static vs dynamic list
+### 3.Static vs dynamic list
 
 Data structure is a way of storing and organising data efficiently such that the required operations on them can be performed be efficient with respect to time as well as memory.
 Data structure is a way of storing and organising data efficiently such that the required operations on them can be performed be efficient with respect to time as well as memory.
