@@ -248,7 +248,7 @@ Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. Th
 - Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.
 - No disk may be placed on top of a smaller disk.
   
-For n disks, total 2n – 1 moves are required.
+For n disks, total 2^n – 1 moves are required.
 
 ### 2. Deterministic and non-deterministic algorithm
 
@@ -262,5 +262,4 @@ Can determine the next step of execution. | Cannot determine the next step of ex
 
 ### 3.Static vs dynamic list
 
-Data structure is a way of storing and organising data efficiently such that the required operations on them can be performed be efficient with respect to time as well as memory.
-Data structure is a way of storing and organising data efficiently such that the required operations on them can be performed be efficient with respect to time as well as memory.
+Static Data structure has fixed memory size whereas in Dynamic Data Structure, the size can be randomly updated during run time which may be considered efficient with respect to memory complexity of the code. Static Data Structure provides more easier access to elements with respect to dynamic data structure. Unlike static data structures, dynamic data structures are flexible.
