@@ -234,8 +234,8 @@ Ans: JDBC stands for Java Database Connectivity. JDBC is a Java API to connect a
 ## 6. b) What is the difference between Frame and Swing?
 
 Ans:
-AWT | Swing
-----|------
+Frame(AWT) | Swing
+-----------|------
 AWT stands for Abstract windows toolkit. | Swing is also called as JFC’s (Java Foundation classes).
 AWT components are called Heavyweight component. | Swings are called light weight component because swing components sits on the top of AWT components and do the work.
 AWT components require java.awt package. | Swing components require javax.swing package.
