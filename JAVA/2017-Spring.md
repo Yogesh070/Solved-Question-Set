@@ -92,8 +92,8 @@ class Testinheritance{
 ```
 
 Output:
-
 This is parent class
+
 This is child class
 
 ## 3. a) Define Exception handling with Example
@@ -221,11 +221,13 @@ Ans:
 
 ## 6. a)Define JDBC. Write a program to update data on following table.
 
+```javascript
 Table: student
 Column: NAME TYPE
 id number
 name varchar
 age number
+```
 
 Ans: JDBC stands for Java Database Connectivity. JDBC is a Java API to connect and execute the query with the database. It is a part of JavaSE (Java Standard Edition).
 
@@ -233,6 +235,7 @@ Ans: JDBC stands for Java Database Connectivity. JDBC is a Java API to connect a
 
 Ans:
 AWT | Swing
+----|------
 AWT stands for Abstract windows toolkit. | Swing is also called as JFC’s (Java Foundation classes).
 AWT components are called Heavyweight component. | Swings are called light weight component because swing components sits on the top of AWT components and do the work.
 AWT components require java.awt package. | Swing components require javax.swing package.
