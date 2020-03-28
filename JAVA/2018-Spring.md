@@ -141,7 +141,43 @@ Ans: Applets are small programs that are designed to execute in web browsers to 
 
 ## 4. a) Create a swing GUI that contains a text field and a button. When the button is pressed the content in the textfield should be changed into uppercase and background color of text field should be changed.
 
-Ans: 
+Ans:
+
+```javascript
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class UppercaseGui extends JFrame implements ActionListener {
+    JTextField tf;
+    JButton btn;
+    UppercaseGui(){
+        tf= new JTextField();
+        btn= new JButton("Button");
+        add(tf);
+        add(btn);
+        tf.setBounds(100,50,150,30);
+        btn.setBounds(100,100,80,30);
+        btn.addActionListener(this);
+        setLayout(null);
+        setSize(500,500);
+        setVisible(true);
+    }
+    public void actionPerformed(ActionEvent e)
+    {
+        String s= tf.getText();
+        if (e.getSource()==btn)
+        {
+            tf.setText(s.toUpperCase());
+            tf.setBackground(new Color((int)(Math.random()*0x1000000)));
+        }
+    }
+     public static void main(String[] args) {
+    new UppercaseGui();
+    }
+}
+```
 
 ## 4. b) Demonstrate various drawings methods.How do you create,load and display image.
 
