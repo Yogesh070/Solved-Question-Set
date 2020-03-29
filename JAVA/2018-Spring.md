@@ -234,7 +234,17 @@ Ans: Following are the advantages of the prepared statement:
 
 Connection pooling means that connections are reused rather than created each time a connection is requested. To facilitate connection reuse, a memory cache of database connections, called a connection pool, is maintained by a connection pooling module as a layer on top of any standard JDBC driver product.
 
-///third part not added//
+Connection pooling is a method that provides a significant improvement on performance by reusing connections rather than creating a new connection for each connection request, without requiring changes in your JDBC application code.
+
+The steps for connection pools are−
+
+- Import JDBC Packages: Add import statements to your Java program to import required classes in your Java code.
+
+- Register JDBC Driver: This step causes the JVM to load the desired driver implementation into memory so it can fulfill your JDBC requests.
+
+- Database URL Formulation: This is to create a properly formatted address that points to the database to which you wish to connect.
+
+- Create Connection Object: Finally, code a call to the DriverManager object's getConnection( ) method to establish actual database connection.
 
 ## 6. b) A database "testdb" contains a table "employee" with some records having id, name, post, salary Write a program to update the salary to 50000 whose post is "Manager".
 
