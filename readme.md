@@ -1,8 +1,10 @@
-# Exam kanda!!!
+# Exams!!!
 
-This is all resources combined found on internet from Bharpardo source for Exams.
+Resources combined after research on internet and other study materials from reliable source for Exams.
 
-## You can add the answers and add more content if needed. _LETS GO TOGEHTHER
+## You can add the answers and add more content if needed.
+
+> Forks are a great way to contribute to a repository. After forking a repository, you can send the original author a pull request.
 
 ## INDEX
 
