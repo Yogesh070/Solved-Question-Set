@@ -224,7 +224,19 @@ Ans:Commonly used drawing methods are:
 - public abstract void setFont(Font font): is used to set the graphics current font to the specified font.
 
 ```javascript
+import java.awt.*;  
+import java.applet.*;  
+public class DisplayImage extends Applet {
 
+  Image picture; //create
+  
+  public void init() {  //load
+    picture = getImage(getDocumentBase(),"sonoo.jpg");  
+  }  
+
+  public void paint(Graphics g) {  
+    g.drawImage(picture, 30,30, this);  //display
+  }  
 ```
 
 ## 5. a) Differentiate between TCP and UDP socket. Explain InetAddress class.
@@ -274,7 +286,7 @@ The steps for connection pools are−
 
 - Create Connection Object: Finally, code a call to the DriverManager object's getConnection( ) method to establish actual database connection.
 
-## 6. b) A database "testdb" contains a table "employee" with some records having id, name, post, salary Write a program to update the salary to 50000 whose post is "Manager".
+## 6. b) A database "testdb" contains a table "employee" with some records having id, name, post, salary. Write a program to update the salary to 50000 whose post is "Manager".
 
 Ans:
 
