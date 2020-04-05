@@ -185,7 +185,7 @@ It cannot contain abstract methods. | It contains abstract methods only.
 Variables and methods in a class can be declared using any access specifier(public, private, default, protected) | All variables and methods in a interface are declared as public.
 Variables in a class can be static, final or neither. | All variables are static and final.
 
-## 4. b)Write a program to read content from file "abc.txt" and store it in 7 "xyz.txt".
+## 4. b)Write a program to read content from file "abc.txt" and store it in "xyz.txt".
 
 Ans:
 
@@ -215,7 +215,7 @@ public class HelloWorld extends Applet
 }
 ```
 
-## 5. b) Write a program to send "Message from Pokhara University" from client to server using java socket prograniming.
+## 5. b) Write a program to send "Message from Pokhara University" from client to server using java socket programming.
 
 Ans:
 
