@@ -1,6 +1,6 @@
 # 2018-Spring
 
-## 1. a)What do you mean by architectural-neutral? What are wrapper classes?Explain".
+## 1. a)What do you mean by architectural-neutral? What are wrapper classes?Explain.
 
 Ans: Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform-independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
 Thus when you write a piece of Java code in a particular platform and generated an executable code .class file. You can execute/run this .class file on any system the only condition is that the target system should have JVM (JRE) installed in it.
@@ -34,6 +34,34 @@ Ans: If a class has multiple methods having same name but different in parameter
 
 No, you can not override static method in Java, though you can declare method with same signature in sub class.Overriding depends on having an instance of a class.Since static method and private methods are bonded during compile time using Type of reference variable, and not object  so the concept is not applicable.
 
+Example:
+
+```javascript
+class Parent {
+   static void display() {
+      System.out.println("Super class");
+   }
+}
+public class Example extends Parent {
+   void display() // trying to override display() {
+      System.out.println("Sub class");
+   }
+   public static void main(String[] args) {
+      Parent obj = new Example();
+      obj.display();
+   }
+}
+```
+
+```javascript
+Output:Example.java:10: error: display() in Example cannot override display() in Parent
+void display() // trying to override display()
+    ^
+overridden method is static
+1 error
+```
+
+And if display() method is set private it cannot be inherited to class example in the above example and shows the error of private access.
 
 ## 2. b) How does interface differ from abstract classes? Elaborate using code snippets to justify.
 
@@ -106,26 +134,26 @@ class MyException extends Exception
 	} 
 } 
 
-// A Class that uses above MyException 
-public class Main 
+// A Class that uses above MyException
+public class Main
 { 
-	// Driver Program 
-	public static void main(String args[]) 
+	// Driver Program
+	public static void main(String args[])
 	{ 
 		try
-		{ 
-			// Throw an object of user defined exception 
-			throw new MyException("GeeksGeeks"); 
-		} 
-		catch (MyException ex) 
-		{ 
-			System.out.println("Caught"); 
+		{
+			// Throw an object of user defined exception
+			throw new MyException("GeeksGeeks");
+		}
+		catch (MyException ex)
+		{
+			System.out.println("Caught");
 
-			// Print the message from MyException object 
-			System.out.println(ex.getMessage()); 
-		} 
-	} 
-} 
+			// Print the message from MyException object
+			System.out.println(ex.getMessage());
+		}
+	}
+}
 
 ```
 
