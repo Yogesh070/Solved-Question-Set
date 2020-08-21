@@ -35,8 +35,8 @@ It is very convenient for evaluating formulas on computer with stacks.
 ## 2. a) Differentiate between recursion adn iteration. Write a recursive mechanism (algorithm)for solving tower of hanoi problem
 
 Ans:
-Basis for comparision | Recursion | Iteration
-----------------------|-----------|----------
+| Basis for comparision | Recursion | Iteration
+| ----------------------|-----------|----------
 Basic | The statement in a body of function calls the function itself. | Allows the set of instructions to be repeatedly executed.
 Format | In recursive function, only termination condition (base case) is specified. | Iteration includes initialization, condition, execution of statement within loop and update (increments and decrements) the control variable.
 Termination	| A conditional statement is included in the body of the function to force the function to return without recursion call being executed. | The iteration statement is repeatedly executed until a certain condition is reached.
@@ -45,7 +45,7 @@ Infinite Repetition| Infinite recursion can crash the system. | Infinite loop us
 Stack | The stack is used to store the set of new local variables and parameters each time the function is called. | Does not uses stack.
 Speed |  Slow in execution. |  Fast in execution.
 Size of Code | Recursion reduces the size of the code. | Iteration makes the code longer.
-Applied | Recursion is always applied to functions. | Iteration is applied to iteration statements or "loops".
+Applied | Recursion is always applied to functions. | Iteration is applied to iteration statements or "loops". |
 
 ```javascript
 // C++ recursive function to solve tower of hanoi puzzle 
