@@ -82,6 +82,24 @@ Ans: Doubly linked list is a collection of nodes linked together in a sequential
 3) We can quickly insert a new node before a given node.
 In singly linked list, to delete a node, pointer to the previous node is needed. To get this previous node, sometimes the list is traversed. In DLL, we can get the previous node using previous pointer.
 
+Algorithm for Inserting an element into the Stack
+We can use the following steps to insert a new node into the stack...
+
+Step 1 - Create a newNode with given value.
+Step 2 - Check whether stack is Empty (top == NULL)
+Step 3 - If it is Empty, then set newNode → next = NULL.
+Step 4 - If it is Not Empty, then set newNode → next = top.
+Step 5 - Finally, set top = newNode.
+pop() - Deleting an Element from a Stack
+
+Algorithm to delete a node from the stack...
+
+Step 1 - Check whether stack is Empty (top == NULL).
+Step 2 - If it is Empty, then display "Stack is Empty!!! Deletion is not possible!!!" and terminate the function
+Step 3 - If it is Not Empty, then define a Node pointer 'temp' and set it to 'top'.
+Step 4 - Then set 'top = top → next'.
+Step 5 - Finally, delete 'temp'. (free(temp)).
+
 ////2nd part not added//
 
 ## 3. a) Explain with example the different cases of balancing AVL tree after inserting a node that violates the property.
@@ -210,6 +228,10 @@ The figure shows incidences of collisions in different table locations. We'll as
 So, in place of the collision error which occurred in the figure we used in the last section, the cell now contains a linked list containing the string 'Janet' and 'Martha' as seen in this new figure. We can see in this figure how the subsequent strings are loaded using the separate chaining technique.
 
 ![Seperate Chaining](https://study.com/cimages/multimages/16/sep_chain2.png)
+
+#### Open Addressing
+
+Like separate chaining, open addressing is a method for handling collisions. In Open Addressing, all elements are stored in the hash table itself. So at any point, size of the table must be greater than or equal to the total number of keys (Note that we can increase table size by copying old data if needed).
 
 ## 6. a) Define Graph and digraphs. Explain Adjacency matrix representation of graph with examples in unidirected and directed graph.
 
